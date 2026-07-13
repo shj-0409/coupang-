@@ -1,0 +1,14 @@
+2026-07-09 05:47:20.204 GMT [2744] LOG:  starting PostgreSQL 18.4 on x86_64-windows, compiled by msvc-19.44.35227, 64-bit
+2026-07-09 05:47:20.209 GMT [2744] LOG:  listening on IPv6 address "::1", port 5432
+2026-07-09 05:47:20.209 GMT [2744] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2026-07-09 05:47:20.434 GMT [980] LOG:  database system was shut down at 2026-07-09 05:47:00 GMT
+2026-07-09 05:47:20.510 GMT [2744] LOG:  database system is ready to accept connections
+2026-07-09 05:52:20.428 GMT [13788] LOG:  checkpoint starting: time
+2026-07-09 05:52:25.363 GMT [13788] LOG:  checkpoint complete: wrote 43 buffers (0.3%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=4.742 s, sync=0.120 s, total=4.935 s; sync files=11, longest=0.018 s, average=0.011 s; distance=332 kB, estimate=332 kB; lsn=0/1839990, redo lsn=0/1839900
+2026-07-09 07:35:47.685 GMT [2744] LOG:  received fast shutdown request
+2026-07-09 07:35:47.732 GMT [2744] LOG:  aborting any active transactions
+2026-07-09 07:35:47.762 GMT [2744] LOG:  background worker "logical replication launcher" (PID 10880) exited with exit code 1
+2026-07-09 07:35:47.778 GMT [13788] LOG:  shutting down
+2026-07-09 07:35:47.873 GMT [13788] LOG:  checkpoint starting: shutdown immediate
+2026-07-09 07:35:51.902 GMT [13788] LOG:  checkpoint complete: wrote 999 buffers (6.1%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.103 s, sync=3.841 s, total=4.124 s; sync files=309, longest=0.058 s, average=0.013 s; distance=4655 kB, estimate=4655 kB; lsn=0/1CC58E0, redo lsn=0/1CC58E0
+2026-07-09 07:35:52.836 GMT [2744] LOG:  database system is shut down

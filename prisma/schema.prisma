@@ -24,6 +24,7 @@ model User {
   wishlist      Wishlist[]
   chats         Chat[]    @relation("UserChats")
   reviews       Review[]
+  vendor        Vendor?
 }
 
 model Vendor {
@@ -75,7 +76,8 @@ model Order {
   
   items         OrderItem[]
   payment       Payment?
-  address       Address
+  addressId     String
+  address       Address   @relation(fields: [addressId], references: [id])
 }
 
 model OrderItem {
@@ -118,6 +120,7 @@ model Address {
   city          String
   zipCode       String
   isDefault     Boolean   @default(false)
+  orders        Order[]
 }
 
 model Wishlist {
